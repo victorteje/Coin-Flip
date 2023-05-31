@@ -2,7 +2,7 @@
 
 body {
     height: 100%;
-    background: linear-gradient(to top right, lightskyblue, rgb(173, 124, 32));
+    background: linear-gradient(to top right, skyblue, midnightblue);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -55,6 +55,8 @@ button {
     filter:drop-shadow(3px 3px 3px black);
     width: fit-content;
     padding: 8px 16px;
+    font-size: larger;
+    font-weight: bold;
 }    
 
 #buttons {
