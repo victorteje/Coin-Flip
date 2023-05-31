@@ -3,6 +3,7 @@ body {
   background: linear-gradient(to top right, lightskyblue, rgb(173, 124, 32));
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
