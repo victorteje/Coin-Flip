@@ -1,0 +1,12 @@
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin coinShape {
+    border-radius: 50%;
+    background-color: gold;
+    height: 200px;
+    width: 200px;
+}
