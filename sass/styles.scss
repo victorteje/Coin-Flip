@@ -8,6 +8,11 @@ body {
     background-attachment: fixed;
 }
 
+main {
+    @include flex (center, flex-start);
+    margin-top: 30%;
+}
+
 h1 {
     text-align: center;
     margin: auto;
@@ -23,6 +28,7 @@ h1 {
     margin: 5% auto;
     @include coinShape(gold);
     @include flex (center, center);
+    position: absolute;
     opacity: 1;
 }
 
@@ -58,7 +64,12 @@ h1 {
     background-image: url('./../assets/tails.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+    position: absolute;
     opacity: 1;
+}
+
+footer {
+    margin-top: 100%;
 }
 
 button {
@@ -72,7 +83,7 @@ button {
 
 #buttons {
     @include flex (center, center);
-    gap: 136px;
+    gap: 56px;
 }    
 
 #score {
@@ -80,6 +91,7 @@ button {
     width: fit-content;
     border-radius: 16px;
     padding: .1%;
+    margin: 25% 35%;
 }
 
 .scoreText {
