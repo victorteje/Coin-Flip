@@ -6,15 +6,15 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    @include flex (column, center);
+    align-content: space-evenly;
 }
 
 main {
-    @include flex (center, flex-start);
-    margin-top: 30%;
+    @include flex (row, center);
 }
 
 h1 {
-    text-align: center;
     margin: auto;
     text-decoration: underline;
     text-shadow: 1px 1px black;
@@ -25,9 +25,10 @@ h1 {
 }    
 
 #heads {
-    margin: 5% auto;
+    margin: 15% auto;
     @include coinShape(gold);
-    @include flex (center, center);
+    @include flex (row, center);
+    align-items: center;
     position: absolute;
     opacity: 1;
 }
@@ -38,7 +39,8 @@ h1 {
     width: 32px;
     background-color: white;
     margin: 10%;
-    @include flex (center, center);
+    @include flex (row, center);
+    align-items: center;
 }
 
 .pupil {
@@ -58,18 +60,14 @@ h1 {
 }
 
 #tails {
-    margin: 5% auto;
+    margin: 15% auto;
     @include coinShape(white);
-    @include flex (center, center);
+    @include flex (row, center);
     background-image: url('./../assets/tails.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     opacity: 1;
-}
-
-footer {
-    margin-top: 100%;
 }
 
 button {
@@ -82,7 +80,7 @@ button {
 }    
 
 #buttons {
-    @include flex (center, center);
+    @include flex (row, center);
     gap: 56px;
 }    
 
@@ -91,7 +89,6 @@ button {
     width: fit-content;
     border-radius: 16px;
     padding: .1%;
-    margin: 25% 35%;
 }
 
 .scoreText {

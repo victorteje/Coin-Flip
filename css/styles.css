@@ -4,17 +4,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-evenly;
 }
 
 main {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  margin-top: 30%;
 }
 
 h1 {
-  text-align: center;
   margin: auto;
   text-decoration: underline;
   text-shadow: 1px 1px black;
@@ -25,13 +27,14 @@ h1 {
 }
 
 #heads {
-  margin: 5% auto;
+  margin: 15% auto;
   background-color: gold;
   border-radius: 50%;
   filter: drop-shadow(1px 1px 1px black);
   height: 200px;
   width: 200px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -45,6 +48,7 @@ h1 {
   background-color: white;
   margin: 10%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -66,24 +70,20 @@ h1 {
 }
 
 #tails {
-  margin: 5% auto;
+  margin: 15% auto;
   background-color: white;
   border-radius: 50%;
   filter: drop-shadow(1px 1px 1px black);
   height: 200px;
   width: 200px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
   background-image: url("./../assets/tails.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
   opacity: 1;
-}
-
-footer {
-  margin-top: 100%;
 }
 
 button {
@@ -97,8 +97,8 @@ button {
 
 #buttons {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
   gap: 56px;
 }
 
@@ -107,7 +107,6 @@ button {
   width: fit-content;
   border-radius: 16px;
   padding: 0.1%;
-  margin: 25% 35%;
 }
 
 .scoreText {
