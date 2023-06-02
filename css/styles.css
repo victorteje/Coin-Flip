@@ -89,4 +89,14 @@ button {
   gap: 136px;
 }
 
+#score {
+  background-color: chocolate;
+  width: fit-content;
+  padding: 0.1%;
+}
+
+.scoreText {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=styles.css.map */
