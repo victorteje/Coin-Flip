@@ -19,14 +19,15 @@ h1 {
 
 #heads {
   margin: 5% auto;
-  border-radius: 50%;
   background-color: gold;
+  border-radius: 50%;
   filter: drop-shadow(1px 1px 1px black);
   height: 200px;
   width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
 }
 
 .eye {
@@ -54,6 +55,22 @@ h1 {
   box-shadow: 0 6px 0 0 black;
   position: absolute;
   margin-top: 80px;
+}
+
+#tails {
+  margin: 5% auto;
+  background-color: white;
+  border-radius: 50%;
+  filter: drop-shadow(1px 1px 1px black);
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./../assets/tails.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
 }
 
 button {
