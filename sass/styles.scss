@@ -10,9 +10,20 @@ body {
     align-content: space-around;
 }
 
-main {
+#coin {
     @include flex (row, center);
     height: fit-content;
+}
+
+.spinAnim {
+    animation: spin .2s linear 5;
+}
+
+@keyframes spin {
+    from {}
+    to {
+        transform: rotate3d(0, 1, 0, 180deg);
+    }
 }
 
 #scoreBoard {
@@ -82,7 +93,8 @@ h1 {
     background-image: url('./../assets/tails.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: 0;
+    opacity: 1;
+    transform: rotate3d(0, 1, 0, 180deg);
 }
 
 button {
