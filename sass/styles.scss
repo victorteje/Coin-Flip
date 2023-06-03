@@ -16,8 +16,13 @@ main {
 }
 
 #scoreBoard {
-    position: absolute;
     color: yellow;
+    position: relative;
+    font-size: medium;
+    @media only screen and (min-width: 480px) {
+        position: absolute;
+        font-size: larger;
+    }
 }
 
 .scoreText {
@@ -41,7 +46,7 @@ h1 {
     @include flex (row, center);
     align-items: center;
     position: absolute;
-    opacity: 0;
+    opacity: 1;
 }
 
 .eye {
