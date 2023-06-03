@@ -10,13 +10,12 @@ const headsOrTails = () => {
         let tailsWins = document.getElementById("tails");
         tailsWins.style.opacity = 1;
     }
-}
-
-
-document.addEventListener("click", spinCoin);
-function spinCoin() {
-    let flip = document.getElementById("coin");
-    flip.classList.add("spinAnim");
+    document.addEventListener("click", spinCoin);
+    function spinCoin() {
+        let flip = document.getElementById("coin");
+        flip.removeAttribute("class");
+        flip.classList.add("spinAnim");
+    }
 }
 
 const resetGame = () => {
