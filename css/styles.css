@@ -17,6 +17,16 @@ main {
   height: fit-content;
 }
 
+#scoreBoard {
+  position: absolute;
+  color: yellow;
+}
+
+.scoreText {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 h1 {
   margin: auto;
   text-decoration: underline;
@@ -100,18 +110,6 @@ button {
   flex-direction: row;
   justify-content: center;
   gap: 56px;
-}
-
-#score {
-  background-color: chocolate;
-  width: fit-content;
-  border-radius: 16px;
-  padding: 0.1%;
-  position: absolute;
-}
-
-.scoreText {
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
