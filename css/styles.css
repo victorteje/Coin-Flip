@@ -109,7 +109,6 @@ h1 {
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0;
-  transform: rotate3d(0, 1, 0, 180deg);
 }
 
 button {
