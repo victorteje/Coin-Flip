@@ -10,23 +10,25 @@ const headsOrTails = () => {
     let tailsScore = 0;
     if (result === 1)
     {   
-        let tailsLoses = document.getElementById("tails");
-        tailsLoses.style.opacity = 0;
-        let headsWins = document.getElementById("heads");
-        headsWins.style.opacity = 1;
-        
-        headsScore++;
-        document.getElementById("headsScore").innerText = headsScore;
+        setTimeout(() => {
+            let tailsLoses = document.getElementById("tails");
+            tailsLoses.style.opacity = 0;
+            let headsWins = document.getElementById("heads");
+            headsWins.style.opacity = 1;
+            headsScore++;
+            document.getElementById("headsScore").innerText = headsScore;
+        }, 1500);
     }
     else
     {
-        let headsLoses = document.getElementById("heads");
-        headsLoses.style.opacity = 0;
-        let tailsWins = document.getElementById("tails");
-        tailsWins.style.opacity = 1;
-
-        tailsScore++;
-        document.getElementById("tailsScore").innerText = tailsScore;
+        setTimeout(() => {
+            let headsLoses = document.getElementById("heads");
+            headsLoses.style.opacity = 0;
+            let tailsWins = document.getElementById("tails");
+            tailsWins.style.opacity = 1;
+            tailsScore++;
+            document.getElementById("tailsScore").innerText = tailsScore;
+        }, 1500);
     }
 }
 
