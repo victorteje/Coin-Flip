@@ -5,6 +5,8 @@ const headsOrTails = () => {
         let flip = document.getElementById("coin");
         flip.classList.remove("spinAnim");
         flip.classList.add("spinAnim");
+        let showBackside = document.getElementById("tails");
+        showBackside.style.opacity = 1;
     }
 
     let result = Math.round(Math.random());

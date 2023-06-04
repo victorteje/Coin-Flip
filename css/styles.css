@@ -18,6 +18,7 @@ header {
   flex-direction: row;
   justify-content: center;
   height: fit-content;
+  transform-style: preserve-3d;
 }
 
 .spinAnim {
@@ -50,7 +51,6 @@ header {
 }
 
 .scoreText {
-  text-decoration: underline;
   font-weight: bold;
 }
 
@@ -119,6 +119,7 @@ h1 {
   background-image: url("./../assets/tails.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  backface-visibility: hidden;
   opacity: 0;
 }
 
