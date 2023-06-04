@@ -1,13 +1,16 @@
 const headsOrTails = () => {
     document.addEventListener("click", spinCoin);
+
     function spinCoin() {
         let flip = document.getElementById("coin");
-        flip.removeAttribute("class");
+        flip.classList.remove("spinAnim");
         flip.classList.add("spinAnim");
     }
+
     let result = Math.round(Math.random());
     let headsScore = 0;
     let tailsScore = 0;
+
     if (result === 1)
     {   
         setTimeout(() => {
@@ -33,7 +36,6 @@ const headsOrTails = () => {
         }, 1500);
     }
 }
-
 
 const resetGame = () => {
     document.getElementById("headsScore").innerText = 0;
