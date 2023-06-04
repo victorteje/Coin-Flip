@@ -1,13 +1,16 @@
 body {
-  height: 100%;
+  height: 98vh;
   background: linear-gradient(to top right, skyblue, midnightblue);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-content: space-around;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #coin {
@@ -23,12 +26,12 @@ body {
 
 @keyframes spin {
   to {
-    transform: rotate3d(1, 0, 0, 180deg);
+    transform: rotateX(180deg);
   }
 }
 @keyframes moveUp {
   50% {
-    margin-top: -250px;
+    margin-top: -350px;
   }
   100% {
     margin-top: 0%;
