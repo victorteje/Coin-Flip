@@ -28,6 +28,8 @@ const headsOrTails = () => {
             tailsWins.style.opacity = 1;
             tailsScore++;
             document.getElementById("tailsScore").innerText = tailsScore;
+            let ringSound = new Audio ("./../assets/SonicRing.mp3")
+            ringSound.play();
         }, 1500);
     }
 }
