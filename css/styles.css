@@ -18,12 +18,20 @@ body {
 }
 
 .spinAnim {
-  animation: spin 0.2s linear 5;
+  animation: spin 0.2s linear 8, moveUp 1.6s linear 1;
 }
 
 @keyframes spin {
   to {
-    transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(1, 0, 0, 180deg);
+  }
+}
+@keyframes moveUp {
+  50% {
+    margin-top: -250px;
+  }
+  100% {
+    margin-top: 0%;
   }
 }
 #scoreBoard {
@@ -125,6 +133,12 @@ button {
   flex-direction: row;
   justify-content: center;
   gap: 56px;
+}
+
+footer {
+  position: fixed;
+  bottom: 10%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
