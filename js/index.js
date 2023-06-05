@@ -22,7 +22,7 @@ const headsOrTails = () => {
             let headsWins = document.getElementById("heads");
             headsWins.style.opacity = 1;
             headsScore++;
-            document.getElementById("headsScore").innerText = headsScore;
+            document.getElementById("headsScore").innerHTML = headsScore;
         }, 1500);
     }
     else
@@ -33,7 +33,7 @@ const headsOrTails = () => {
             let tailsWins = document.getElementById("tails");
             tailsWins.style.opacity = 1;
             tailsScore++;
-            document.getElementById("tailsScore").innerText = tailsScore;
+            document.getElementById("tailsScore").innerHTML = tailsScore;
             let ringSound = new Audio ("./../assets/SonicRing.mp3")
             ringSound.play();
         }, 1500);
@@ -41,6 +41,8 @@ const headsOrTails = () => {
 }
 
 const resetGame = () => {
-    document.getElementById("headsScore").innerText = 0;
-    document.getElementById("tailsScore").innerText = 0;;
+    let resetHeads = 0;
+    document.getElementById("headsScore").innerHTML = resetHeads;
+    let resetTails = 0;
+    document.getElementById("tailsScore").innerHTML = resetTails;
 }
