@@ -2,6 +2,12 @@ let headsScore = 0;
 let tailsScore = 0;
     
 const headsOrTails = () => {
+    let disableButton = document.getElementById("flip");
+    disableButton.disabled = true;
+    setTimeout(() => {
+        disableButton.disabled = false;        
+    }, 1600);
+
     document.addEventListener("click", spinCoin);
 
     function spinCoin() {
