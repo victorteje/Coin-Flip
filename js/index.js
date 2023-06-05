@@ -10,9 +10,10 @@ const headsOrTails = () => {
 
     document.addEventListener("click", spinCoin);
     
+    let flip = document.getElementById("coin");
+    flip.classList.remove("spinAnim");
+
     function spinCoin() {
-        let flip = document.getElementById("coin");
-        flip.classList.remove("spinAnim");
         setTimeout(() => {
             flip.classList.add("spinAnim");            
         }, 1);
