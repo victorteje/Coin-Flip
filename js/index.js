@@ -7,19 +7,15 @@ const headsOrTails = () => {
     setTimeout(() => {
         disableButton.disabled = false;        
     }, 1600);
-
-    document.addEventListener("click", spinCoin);
-    
+  
     let flip = document.getElementById("coin");
     flip.classList.remove("spinAnim");
+    setTimeout(() => {
+        flip.classList.add("spinAnim");            
+    }, 1);
 
-    function spinCoin() {
-        setTimeout(() => {
-            flip.classList.add("spinAnim");            
-        }, 1);
-        let showBackside = document.getElementById("tails");
-        showBackside.style.opacity = 1;
-    }
+    let showBackside = document.getElementById("tails");
+    showBackside.style.opacity = 1;
 
     let result = Math.round(Math.random());
     
