@@ -9,11 +9,13 @@ const headsOrTails = () => {
     }, 1600);
 
     document.addEventListener("click", spinCoin);
-
+    
     function spinCoin() {
         let flip = document.getElementById("coin");
         flip.classList.remove("spinAnim");
-        flip.classList.add("spinAnim");
+        setTimeout(() => {
+            flip.classList.add("spinAnim");            
+        }, 1);
         let showBackside = document.getElementById("tails");
         showBackside.style.opacity = 1;
     }
