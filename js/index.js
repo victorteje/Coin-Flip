@@ -41,8 +41,10 @@ const headsOrTails = () => {
 }
 
 const resetGame = () => {
-    let resetHeads = 0;
-    document.getElementById("headsScore").innerHTML = resetHeads;
-    let resetTails = 0;
-    document.getElementById("tailsScore").innerHTML = resetTails;
+    headsScore = 0;
+    tailsScore = 0;
+    let resetHeads = document.getElementById("headsScore");
+    resetHeads.innerHTML = 0;
+    let resetTails = document.getElementById("tailsScore");
+    resetTails.innerHTML = 0;
 }
