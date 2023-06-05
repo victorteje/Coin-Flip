@@ -1,3 +1,6 @@
+let headsScore = 0;
+let tailsScore = 0;
+    
 const headsOrTails = () => {
     document.addEventListener("click", spinCoin);
 
@@ -10,9 +13,7 @@ const headsOrTails = () => {
     }
 
     let result = Math.round(Math.random());
-    let headsScore = 0;
-    let tailsScore = 0;
-
+    
     if (result === 1)
     {   
         setTimeout(() => {
