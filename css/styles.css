@@ -16,7 +16,6 @@ header {
 #scoreBoard {
   color: yellow;
   position: relative;
-  font-size: medium;
 }
 @media only screen and (min-width: 480px) {
   #scoreBoard {
@@ -25,12 +24,17 @@ header {
   }
 }
 
+table {
+  font-size: larger;
+}
+
 th {
   font-weight: bold;
   text-decoration: underline;
 }
 
 h1 {
+  font-size: 2.5rem;
   margin: auto;
   text-decoration: underline;
   text-shadow: 1px 1px black;
@@ -140,10 +144,21 @@ button {
   gap: 56px;
 }
 
-footer {
+#buttons {
   position: fixed;
   bottom: 10%;
   width: 100%;
+}
+
+footer {
+  background-image: url("./../assets/GreenHill.png");
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 391px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=styles.css.map */
