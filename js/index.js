@@ -14,8 +14,19 @@ const headsOrTails = () => {
         flip.classList.add("spinAnim");            
     }, 1);
 
-    let showBackside = document.getElementById("tails");
-    showBackside.style.opacity = 1;
+    let showBacksideHeads = document.getElementById("heads");
+    showBacksideHeads.style.opacity = 1;
+    let showBacksideTails = document.getElementById("tails");
+    showBacksideTails.style.opacity = 1;
+
+    // function ramdomOpacity(element){
+    //     if(element === "heads"){
+    //         showBackside.style.opacity = 1;
+    //     }
+    //     if(element === "tails"){
+    //         showBackside.style.opacity = 1;
+    //     }
+    // }
 
     let result = Math.round(Math.random());
     
