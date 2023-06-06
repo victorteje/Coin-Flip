@@ -1,6 +1,6 @@
 let headsScore = 0;
 let tailsScore = 0;
-    
+
 const headsOrTails = () => {
     let disableButton = document.getElementById("flip");
     disableButton.disabled = true;
@@ -13,21 +13,7 @@ const headsOrTails = () => {
     setTimeout(() => {
         flip.classList.add("spinAnim");            
     }, 1);
-
-    let showBacksideHeads = document.getElementById("heads");
-    showBacksideHeads.style.opacity = 1;
-    let showBacksideTails = document.getElementById("tails");
-    showBacksideTails.style.opacity = 1;
-
-    // function ramdomOpacity(element){
-    //     if(element === "heads"){
-    //         showBackside.style.opacity = 1;
-    //     }
-    //     if(element === "tails"){
-    //         showBackside.style.opacity = 1;
-    //     }
-    // }
-
+    
     let result = Math.round(Math.random());
     
     if (result === 1)
@@ -53,6 +39,19 @@ const headsOrTails = () => {
             let ringSound = new Audio ("./../assets/SonicRing.mp3");
             ringSound.play();
         }, 1500);
+    }
+    let showBacksideHeads = document.getElementById("heads");
+    let showBacksideTails = document.getElementById("tails");
+    showBacksideHeads.style.opacity = 1;
+    showBacksideTails.style.opacity = 1;
+}
+
+const backsideOpacity = (side) => {
+    if(side === "heads"){
+        showBacksideHeads.style.opacity = 1;
+    }
+    if(side === "tails"){
+        showBacksideTails.style.opacity = 1;
     }
 }
 
