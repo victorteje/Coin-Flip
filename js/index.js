@@ -46,15 +46,6 @@ const headsOrTails = () => {
     showBacksideTails.style.opacity = 1;
 }
 
-const backsideOpacity = (side) => {
-    if(side === "heads"){
-        showBacksideHeads.style.opacity = 1;
-    }
-    if(side === "tails"){
-        showBacksideTails.style.opacity = 1;
-    }
-}
-
 const resetGame = () => {
     headsScore = 0;
     tailsScore = 0;
