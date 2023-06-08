@@ -1,11 +1,6 @@
 let headsScore = 0;
 let tailsScore = 0;
 
-// const playMusic = () => {
-//     let titleTheme = document.getElementById("titleTheme");
-//     titleTheme.play();
-// }
-
 const headsOrTails = () => {
     let disableButton = document.getElementById("flip");
     disableButton.disabled = true;
@@ -21,7 +16,7 @@ const headsOrTails = () => {
 
     let jumpSound = new Audio ("./../assets/sounds/jump.mp3");
     jumpSound.play();
-    jumpSound.volume = .5;
+    jumpSound.volume = .2;
     
     let result = Math.round(Math.random());
     
@@ -36,6 +31,7 @@ const headsOrTails = () => {
             document.getElementById("headsScore").innerHTML = headsScore;
             let ringSound = new Audio ("./../assets/sounds/sonicRing.mp3");
             ringSound.play();
+            ringSound.volume = .7;
         }, 1500);
     }
     else
@@ -49,6 +45,7 @@ const headsOrTails = () => {
             document.getElementById("tailsScore").innerHTML = tailsScore;
             let ringSound = new Audio ("./../assets/sounds/sonicRing.mp3");
             ringSound.play();
+            ringSound.volume = .7;
         }, 1500);
     }
     let showBacksideHeads = document.getElementById("heads");
@@ -66,4 +63,5 @@ const resetGame = () => {
     resetTails.innerHTML = 0;
     let ringLoss = new Audio ("./../assets/sounds/sonicRingLoss.mp3");
     ringLoss.play();
+    ringLoss.volume = .7;
 }

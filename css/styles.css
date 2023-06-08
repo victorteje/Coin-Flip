@@ -97,7 +97,7 @@ h1 {
 }
 #heads {
   margin: 15% auto;
-  background-color: darkgoldenrod;
+  background-color: LightBlue;
   border-radius: 50%;
   filter: drop-shadow(1px 1px 1px black);
   height: 200px;
@@ -111,7 +111,7 @@ h1 {
 
 #tails {
   margin: 15% auto;
-  background-color: LightGrey;
+  background-color: khaki;
   border-radius: 50%;
   filter: drop-shadow(1px 1px 1px black);
   height: 200px;

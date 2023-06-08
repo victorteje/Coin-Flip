@@ -90,7 +90,7 @@ h1 {
 
 #heads {
     margin: 15% auto;
-    @include coinShape(darkgoldenrod);
+    @include coinShape(LightBlue);
     position: absolute;
     background-image: url('./../assets/images/sonic.png');
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ h1 {
 
 #tails {
     margin: 15% auto;
-    @include coinShape(LightGrey);
+    @include coinShape(khaki);
     @include flex (row, center);
     background-image: url('./../assets/images/tails.png');
     background-repeat: no-repeat;
