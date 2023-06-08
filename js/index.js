@@ -1,6 +1,11 @@
 let headsScore = 0;
 let tailsScore = 0;
 
+// const playMusic = () => {
+//     let titleTheme = document.getElementById("titleTheme");
+//     titleTheme.play();
+// }
+
 const headsOrTails = () => {
     let disableButton = document.getElementById("flip");
     disableButton.disabled = true;
