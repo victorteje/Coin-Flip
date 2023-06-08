@@ -1,6 +1,10 @@
 let headsScore = 0;
 let tailsScore = 0;
 
+let jumpSound = new Audio ("./../assets/sounds/jump.mp3");
+let ringSound = new Audio ("./../assets/sounds/sonicRing.mp3");
+let ringLoss = new Audio ("./../assets/sounds/sonicRingLoss.mp3");
+
 const headsOrTails = () => {
     let disableButton = document.getElementById("flip");
     disableButton.disabled = true;
@@ -14,7 +18,6 @@ const headsOrTails = () => {
         flip.classList.add("spinAnim");            
     }, 1);
 
-    let jumpSound = new Audio ("./../assets/sounds/jump.mp3");
     jumpSound.play();
     jumpSound.volume = .2;
     
@@ -29,7 +32,6 @@ const headsOrTails = () => {
             headsWins.style.opacity = 1;
             headsScore++;
             document.getElementById("headsScore").innerHTML = headsScore;
-            let ringSound = new Audio ("./../assets/sounds/sonicRing.mp3");
             ringSound.play();
             ringSound.volume = .7;
         }, 1500);
@@ -43,7 +45,6 @@ const headsOrTails = () => {
             tailsWins.style.opacity = 1;
             tailsScore++;
             document.getElementById("tailsScore").innerHTML = tailsScore;
-            let ringSound = new Audio ("./../assets/sounds/sonicRing.mp3");
             ringSound.play();
             ringSound.volume = .7;
         }, 1500);
@@ -61,7 +62,6 @@ const resetGame = () => {
     resetHeads.innerHTML = 0;
     let resetTails = document.getElementById("tailsScore");
     resetTails.innerHTML = 0;
-    let ringLoss = new Audio ("./../assets/sounds/sonicRingLoss.mp3");
     ringLoss.play();
     ringLoss.volume = .7;
 }
