@@ -92,7 +92,7 @@ h1 {
     margin: 15% auto;
     @include coinShape(darkgoldenrod);
     position: absolute;
-    background-image: url('./../assets/sonic.png');
+    background-image: url('./../assets/images/sonic.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top 100% left 70%;
@@ -102,7 +102,7 @@ h1 {
     margin: 15% auto;
     @include coinShape(LightGrey);
     @include flex (row, center);
-    background-image: url('./../assets/tails.png');
+    background-image: url('./../assets/images/tails.png');
     background-repeat: no-repeat;
     background-size: contain;
     backface-visibility: hidden;
@@ -130,7 +130,7 @@ button {
 }
 
 footer {
-    background-image: url('./../assets/greenHill.png');
+    background-image: url('./../assets/images/greenHill.png');
     position: fixed;
     bottom: 0;
     left: 0;
