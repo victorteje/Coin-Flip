@@ -36,6 +36,9 @@ header {
 table {
     font-weight: 100;
     font-size: large;
+    @media only screen and (min-width: 1200px) {
+        font-size: larger;
+    }
 }
 
 th {
