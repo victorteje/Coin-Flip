@@ -25,6 +25,8 @@ const headsOrTails = () => {
             headsWins.style.opacity = 1;
             headsScore++;
             document.getElementById("headsScore").innerHTML = headsScore;
+            let ringSound = new Audio ("./../assets/sonicRing.mp3");
+            ringSound.play();
         }, 1500);
     }
     else
@@ -36,7 +38,7 @@ const headsOrTails = () => {
             tailsWins.style.opacity = 1;
             tailsScore++;
             document.getElementById("tailsScore").innerHTML = tailsScore;
-            let ringSound = new Audio ("./../assets/SonicRing.mp3");
+            let ringSound = new Audio ("./../assets/sonicRing.mp3");
             ringSound.play();
         }, 1500);
     }
@@ -53,6 +55,6 @@ const resetGame = () => {
     resetHeads.innerHTML = 0;
     let resetTails = document.getElementById("tailsScore");
     resetTails.innerHTML = 0;
-    let ringLoss = new Audio ("./../assets/SonicRingLoss.mp3");
+    let ringLoss = new Audio ("./../assets/sonicRingLoss.mp3");
     ringLoss.play();
 }

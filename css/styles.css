@@ -80,49 +80,21 @@ h1 {
 }
 #heads {
   margin: 15% auto;
-  background-color: gold;
+  background-color: darkgoldenrod;
   border-radius: 50%;
   filter: drop-shadow(1px 1px 1px black);
   height: 200px;
   width: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-}
-
-.eye {
-  border-radius: 50%;
-  height: 32px;
-  width: 32px;
-  background-color: white;
-  margin: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.pupil {
-  border-radius: 50%;
-  height: 12px;
-  width: 12px;
-  background-color: black;
-}
-
-.mouth {
-  width: 80px;
-  height: 32px;
-  border-radius: 50%;
-  box-shadow: 0 6px 0 0 black;
-  position: absolute;
-  margin-top: 80px;
+  background-image: url("./../assets/sonic.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top 100% left 70%;
 }
 
 #tails {
   margin: 15% auto;
-  background-color: white;
+  background-color: LightGrey;
   border-radius: 50%;
   filter: drop-shadow(1px 1px 1px black);
   height: 200px;
@@ -130,7 +102,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-image: url("./../assets/tails.jpg");
+  background-image: url("./../assets/tails.png");
   background-repeat: no-repeat;
   background-size: contain;
   backface-visibility: hidden;
@@ -160,7 +132,7 @@ button {
 }
 
 footer {
-  background-image: url("./../assets/GreenHill.png");
+  background-image: url("./../assets/greenHill.png");
   position: fixed;
   bottom: 0;
   left: 0;

@@ -36,8 +36,6 @@ td {
     font-weight: 100;
 }
 
-
-
 .counter {
     color: white;
 }
@@ -81,43 +79,47 @@ h1 {
 
 #heads {
     margin: 15% auto;
-    @include coinShape(gold);
-    @include flex (row, center);
-    align-items: center;
+    @include coinShape(darkgoldenrod);
+    // @include flex (column, flex-end);
+    // align-items: center;
     position: absolute;
+    background-image: url('./../assets/sonic.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top 100% left 70%;
 }
 
-.eye {
-    border-radius: 50%;
-    height: 32px;
-    width: 32px;
-    background-color: white;
-    margin: 10%;
-    @include flex (row, center);
-    align-items: center;
-}
+// .eye {
+//     border-radius: 50%;
+//     height: 32px;
+//     width: 32px;
+//     background-color: white;
+//     margin: 10%;
+//     @include flex (row, center);
+//     align-items: center;
+// }
 
-.pupil {
-    border-radius: 50%;
-    height: 12px;
-    width: 12px;
-    background-color: black;
-}
+// .pupil {
+//     border-radius: 50%;
+//     height: 12px;
+//     width: 12px;
+//     background-color: black;
+// }
 
-.mouth {
-    width: 80px;
-    height: 32px;
-    border-radius: 50%;
-    box-shadow: 0 6px 0 0  black;
-    position: absolute;
-    margin-top: 80px;
-}
+// .mouth {
+//     width: 80px;
+//     height: 32px;
+//     border-radius: 50%;
+//     box-shadow: 0 6px 0 0  black;
+//     position: absolute;
+//     margin-top: 80px;
+// }
 
 #tails {
     margin: 15% auto;
-    @include coinShape(white);
+    @include coinShape(LightGrey);
     @include flex (row, center);
-    background-image: url('./../assets/tails.jpg');
+    background-image: url('./../assets/tails.png');
     background-repeat: no-repeat;
     background-size: contain;
     backface-visibility: hidden;
@@ -145,7 +147,7 @@ button {
 }
 
 footer {
-    background-image: url('./../assets/GreenHill.png');
+    background-image: url('./../assets/greenHill.png');
     position: fixed;
     bottom: 0;
     left: 0;
