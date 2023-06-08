@@ -15,7 +15,7 @@ header {
 
 #logo {
     @include flex (row, center);
-    height: 7.5vh;
+    height: 7vh;
     @media only screen and (min-width: 700px) {
         height: 12vh;
     }
