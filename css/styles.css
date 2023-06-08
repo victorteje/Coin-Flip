@@ -14,23 +14,32 @@ header {
 }
 
 #scoreBoard {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: yellow;
   position: relative;
 }
 @media only screen and (min-width: 480px) {
   #scoreBoard {
     position: absolute;
-    font-size: larger;
   }
 }
 
 table {
-  font-size: larger;
+  font-weight: 100;
+  font-size: large;
 }
 
 th {
-  font-weight: bold;
+  font-weight: 100;
   text-decoration: underline;
+}
+
+td {
+  font-weight: 100;
+}
+
+.counter {
+  color: white;
 }
 
 h1 {
