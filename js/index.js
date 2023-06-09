@@ -6,10 +6,14 @@ let ringSound = new Audio ("./../assets/sounds/sonicRing.mp3");
 let ringLoss = new Audio ("./../assets/sounds/sonicRingLoss.mp3");
 
 const headsOrTails = () => {
-    let disableButton = document.getElementById("flip");
-    disableButton.disabled = true;
+    let disableFlipButton = document.getElementById("flip");
+    disableFlipButton.disabled = true;
+    let disableResetButton = document.getElementById("reset");
+    disableResetButton.disabled = true;
+    
     setTimeout(() => {
-        disableButton.disabled = false;        
+        disableFlipButton.disabled = false; 
+        disableResetButton.disabled = false;                
     }, 1600);
   
     let flip = document.getElementById("coin");
