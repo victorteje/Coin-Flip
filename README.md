@@ -1,3 +1,3 @@
 # Coin-Flip
 
-A simple, JS-based, heads or tails game.
+A simple heads or tails game themed around Sonic the Hedgehog.
