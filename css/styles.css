@@ -31,7 +31,7 @@ header {
 }
 
 #scoreBoard {
-  font-family: Impact, sans-serif;
+  font-family: "VT323", monospace;
   color: yellow;
   position: relative;
 }
@@ -42,22 +42,17 @@ header {
 }
 
 table {
-  font-weight: 100;
-  font-size: large;
-}
-@media only screen and (min-width: 1200px) {
-  table {
-    font-size: larger;
-  }
+  font-weight: 900;
+  font-size: x-large;
 }
 
 th {
-  font-weight: 100;
+  font-weight: 900;
   text-decoration: underline;
 }
 
 td {
-  font-weight: 100;
+  font-weight: 900;
 }
 
 .counter {

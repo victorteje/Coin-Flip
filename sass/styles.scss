@@ -1,4 +1,4 @@
-@import "_variables.scss";
+@import "_mixins.scss";
 
 body {
     height: 98vh;
@@ -25,7 +25,8 @@ header {
 }
 
 #scoreBoard {
-    font-family: Impact, sans-serif;
+    // font-family: Impact, sans-serif;
+    font-family: 'VT323', monospace;
     color: yellow;
     position: relative;
     @media only screen and (min-width: 480px) {
@@ -34,20 +35,20 @@ header {
 }
 
 table {
-    font-weight: 100;
-    font-size: large;
-    @media only screen and (min-width: 1200px) {
-        font-size: larger;
-    }
+    font-weight: 900;
+    font-size: x-large;
+    // @media only screen and (min-width: 1200px) {
+    //     font-size: larger;
+    // }
 }
 
 th {
-    font-weight: 100;
+    font-weight: 900;
     text-decoration: underline;
 }
 
 td {
-    font-weight: 100;
+    font-weight: 900;
 }
 
 .counter {
