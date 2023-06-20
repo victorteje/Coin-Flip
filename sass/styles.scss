@@ -1,5 +1,9 @@
 @import "_mixins.scss";
 
+* {
+    font-family: 'VT323', monospace;
+}
+
 body {
     height: 98vh;
     background: linear-gradient(to top right, skyblue, midnightblue);
@@ -26,7 +30,7 @@ header {
 
 #scoreBoard {
     // font-family: Impact, sans-serif;
-    font-family: 'VT323', monospace;
+    // font-family: 'VT323', monospace;
     color: yellow;
     position: relative;
     @media only screen and (min-width: 480px) {
@@ -35,11 +39,12 @@ header {
 }
 
 table {
-    font-weight: 900;
-    font-size: x-large;
-    // @media only screen and (min-width: 1200px) {
-    //     font-size: larger;
-    // }
+    font-weight: bold;
+    font-size: larger;
+    @media only screen and (min-width: 1200px) {
+        font-size: x-large;
+        font-weight: bolder;
+    }
 }
 
 th {
@@ -118,8 +123,10 @@ button {
     filter:drop-shadow(3px 3px 3px black);
     width: fit-content;
     padding: 8px 16px;
-    font-size: larger;
-    font-weight: bold;
+    font-size: x-large;
+    @media only screen and (min-width: 1200px) {
+        font-size: xx-large;
+    }
 }    
 
 #buttons {
